@@ -1,0 +1,76 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{gvv}
+\usepackage[latin1]{inputenc}
+\usepackage{array}
+\usepackage{pgf}
+\usepackage{lmodern}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\vspace{3cm}
+
+\title{}
+\author{EE23BTECH11054 -  Sai Krishna Shanigarapu$^{*}$
+}
+\maketitle
+\newpage
+\bigskip
+
+% \renewcommand{\thefigure}{\theenumi}
+% \renewcommand{\thetable}{\theenumi}
+
+\section*{Gate EE 2023}
+54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).
+%\input{circuits/ckt1}
+\begin{figure}[h!]
+  \centering
+  \resizebox{0.8\columnwidth}{!}{\input{circuits/ckt1}}
+\end{figure}
+
+\solution\\
+
+Case(i) Switch K is open and $\overline{K}$ is closed.
+\begin{figure}[h!]
+  \centering
+  \resizebox{0.50\columnwidth}{!}{\input{circuits/ckt2}}
+\end{figure}
+
+\begin{align}
+    i_c &= \frac{10}{10-j 10}\text{ x } 1\angle 0^\circ\\
+    V_c &= \frac{10}{10-10 j}\text{ x }\brak{-j10}\\
+    &= 7.07 \angle \brak{-45^\circ}V\\
+    V_c\brak{t_1} &= 7.07\sin \brak{1000t-45^\circ}V
+\end{align}
+
+\newpage
+Case(ii) Switch K is closed and $\overline{K}$ is open.
+
+\begin{figure}[h!]
+  \centering
+  \resizebox{0.55\columnwidth}{!}{\input{circuits/ckt3}}
+\end{figure}
+
+\begin{align}
+    V_c\brak{\infty} &= 5V\\
+    \tau &= 1\text{msec}\\
+    V_c\brak{t} &= 5 + \brak{7.07\sin \brak{100t_1 - 45^\circ}-5}e^{-t/ \tau}
+\end{align}
+For transient free voltage,
+\begin{align}
+    7.07\sin \brak{100t_1 - 45^\circ}-5 &= 5\\
+    1000t_1 - \frac{\pi}{4} &= \frac{\pi}{4}\\
+    \implies t_1 &= 1.57 \text{msec}
+\end{align}
+
+\input{tables/table1}
+
+
+\end{document}
