@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  28 JAN 2024 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  31 JAN 2024 00:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,15 +831,79 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
+)
+\XKV@depth=\count311
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box71
+)
+\tc@llx=\dimen308
+\tc@lly=\dimen309
+\tc@urx=\dimen310
+\tc@ury=\dimen311
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen312
+\adjbox@Height=\dimen313
+\adjbox@Depth=\dimen314
+\adjbox@Totalheight=\dimen315
+\adjbox@pwidth=\dimen316
+\adjbox@pheight=\dimen317
+\adjbox@pdepth=\dimen318
+\adjbox@ptotalheight=\dimen319
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count312
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box72
+\sift@deathcycles=\count313
+\@vwid@loff=\dimen320
+\@vwid@roff=\dimen321
+))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen308
-\ar@mcellbox=\box71
-\extrarowheight=\dimen309
-\NC@list=\toks44
+\col@sep=\dimen322
+\ar@mcellbox=\box73
+\extrarowheight=\dimen323
+\NC@list=\toks46
 \extratabsurround=\skip56
 \backup@length=\skip57
-\ar@cellbox=\box72
+\ar@cellbox=\box74
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen324
+\TX@old@table=\dimen325
+\TX@old@col=\dimen326
+\TX@target=\dimen327
+\TX@delta=\dimen328
+\TX@cols=\count314
+\TX@ftn=\toks47
 )
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -891,116 +955,116 @@ File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
 ormations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgftransformnonlinearflatness=\dimen310
+\pgftransformnonlinearflatness=\dimen329
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
 code.tex
 File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@curvilinear@time@a=\dimen311
-\pgf@curvilinear@length@a=\dimen312
-\pgf@curvilinear@length@b=\dimen313
-\pgf@curvilinear@length@c=\dimen314
-\pgf@curvilinear@length@d=\dimen315
+\pgf@curvilinear@time@a=\dimen330
+\pgf@curvilinear@length@a=\dimen331
+\pgf@curvilinear@length@b=\dimen332
+\pgf@curvilinear@length@c=\dimen333
+\pgf@curvilinear@length@d=\dimen334
 )
-\pgf@arrows@the@rigidity=\dimen316
+\pgf@arrows@the@rigidity=\dimen335
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count311
-\pgf@circ@count@b=\count312
-\pgf@circ@count@c=\count313
-\pgf@circ@res@up=\dimen317
-\pgf@circ@res@down=\dimen318
-\pgf@circ@res@zero=\dimen319
-\pgf@circ@res@left=\dimen320
-\pgf@circ@res@right=\dimen321
-\pgf@circ@res@other=\dimen322
-\pgf@circ@res@step=\dimen323
-\pgf@circ@res@temp=\dimen324
-\pgf@circ@Rlen=\dimen325
-\pgf@circ@scaled@Rlen=\dimen326
-\pgfstartlinewidth=\dimen327
+\pgf@circ@count@a=\count315
+\pgf@circ@count@b=\count316
+\pgf@circ@count@c=\count317
+\pgf@circ@res@up=\dimen336
+\pgf@circ@res@down=\dimen337
+\pgf@circ@res@zero=\dimen338
+\pgf@circ@res@left=\dimen339
+\pgf@circ@res@right=\dimen340
+\pgf@circ@res@other=\dimen341
+\pgf@circ@res@step=\dimen342
+\pgf@circ@res@temp=\dimen343
+\pgf@circ@Rlen=\dimen344
+\pgf@circ@scaled@Rlen=\dimen345
+\pgfstartlinewidth=\dimen346
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
-\ctikz@scratchbox=\box73
+\ctikz@scratchbox=\box75
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count314
+\pgf@circ@res@count=\count318
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen328
+\pgfcirc@labelshift=\dimen347
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-5.
+7.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 15.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 17.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-15.
+17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-15.
+17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-15.
+17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 17.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 1
-5.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen329
-\scratchbox=\box74
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen330
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count319
+\scratchdimen=\dimen348
+\scratchbox=\box76
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen349
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1010,111 +1074,138 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count321
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 23.
+\c@lstlisting=\count325
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 25.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+5.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+25.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
+25.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 23.
+(Font)              <14> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 23.
+(Font)              <9.79996> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 25.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-3.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-3.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 2
-3.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-3.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-3.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 33.
 
-(./circuits/ckt1.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+(./circuits/ckt1.tex) (./circuits/ckt2.tex
+\absvshift=\dimen350
+) (./tables/table1.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 17.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 17.
+)
+Overfull \hbox (32.54526pt too wide) in paragraph at lines 5--50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--50
 
  []
 
-(./circuits/ckt2.tex
-\absvshift=\dimen331
-) (./circuits/ckt3.tex
-\absvshift=\dimen332
-) (./tables/table1.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 8.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./circuits/ckt3.tex
+\absvshift=\dimen351
+) (./tables/table2.tex)
+Overfull \hbox (32.54294pt too wide) in paragraph at lines 5--64
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--64
+
+ []
+
+(./tables/table3.tex)
+Overfull \hbox (32.54356pt too wide) in paragraph at lines 5--78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--78
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 36079 strings out of 478287
- 904267 string characters out of 5849289
- 1416663 words of memory out of 5000000
- 53708 multiletter control sequences out of 15000+600000
+ 37268 strings out of 478287
+ 926068 string characters out of 5849289
+ 1436129 words of memory out of 5000000
+ 54854 multiletter control sequences out of 15000+600000
  650920 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 117i,11n,120p,475b,1235s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/
-texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts
+ 117i,12n,120p,475b,1231s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
+it.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/share/texmf/fonts
 /type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb>
-Output written on main.pdf (1 page, 161949 bytes).
+c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy
+a.pfb>
+Output written on main.pdf (1 page, 198122 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
