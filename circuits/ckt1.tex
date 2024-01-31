@@ -1,5 +1,5 @@
     \begin{circuitikz}[american]
-        \draw (0,7) to [R=10$\Omega$] (0,2) to [short] (3,2) to [isource, l=$i\brak{t}$] (3,7) to [short] (0,7);
+        \draw (0,7) to [R=10$\Omega$] (0,2) to [short] (3,2) to [isource, l=\scriptsize{$\sin\brak{1000t}$}] (3,7) to [short] (0,7);
         \draw (3,2) to [short] (5,2) to [short] (5,0) to [R=$10\Omega$] (7.5,0) to [battery2 = 5V] (10,0) to [short] (10,2) to [curved capacitor=100$\mu$F, invert] (10,7) to [short] (5,7) to [short] (3,7);
         \draw (5,2) to [short] (7, 2) to[ospst=$\overline{K}$] ++(1,0);
         \draw (5,5) to [short] (5,2);

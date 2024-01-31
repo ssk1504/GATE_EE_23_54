@@ -45,26 +45,42 @@ Case(i) Switch K is open and $\overline{K}$ is closed.
   \resizebox{0.50\columnwidth}{!}{\input{circuits/ckt2}}
 \end{figure}
 
-\begin{table}[h!]
-    \input{tables/table1}
-    \caption{Case1 Parameters}
-    \label{tab:Gate.ee.54.1}
-\end{table}
+\begin{align}
+    X_c &= -10j
+\end{align}
+Using Current divider rule,
+\begin{align}
+    i_c &= \frac{10}{10 + X_c} 1 \angle 0^\circ\\
+    &= \frac{1\angle 0^\circ}{1-j}\\
+    V_c &= i_c X_c\\
+    &= 7.07\angle{-45^\circ} V\\
+    \implies V_c &= 7.07\sin \brak{1000t - 45^\circ}V
+\end{align}
+
+%\begin{table}[h!]
+%    \input{tables/table1}
+%    \caption{Case1 Parameters}
+%    \label{tab:Gate.ee.54.1}
+%\end{table}
 
 \newpage
 Case(ii) Switch K is closed and $\overline{K}$ is open.
 
 \begin{figure}[h!]
-  %\centering
+  \centering
   \resizebox{0.55\columnwidth}{!}{\input{circuits/ckt3}}
 \end{figure}
 
 \begin{table}[ht]
-    \input{tables/table2}
-    \caption{Case2 Parameters}
-    \label{tab:Gate.ee.54.2}
+    \input{tables/table1}
+    \caption{Parameters}
+    \label{tab:Gate.ee.54.1}
 \end{table}
 
+From Table \ref{tab:Gate.ee.54.1} and Table \ref{tab:Gate.ee.54.2},
+\begin{align}
+    V_c\brak{t} &= 5 + \brak{7.07\sin \brak{100t - 45^\circ}-5}e^{-\brak{t-t_1}/ \tau}
+\end{align}
 
 For transient free voltage,
 \begin{align}
@@ -74,9 +90,9 @@ For transient free voltage,
 \end{align}
 
 \begin{table}[ht]
-    \input{tables/table3}
+    \input{tables/table2}
     \caption{Formulae}
-    \label{tab:Gate.ee.54.3}
+    \label{tab:Gate.ee.54.2}
 \end{table}
 
 
