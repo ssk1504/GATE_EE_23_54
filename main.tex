@@ -52,8 +52,8 @@ Using Current divider rule,
 \begin{align}
     i_c &= \frac{10}{10 + X_c} 1 \angle 0^\circ\\
     &= \frac{1\angle 0^\circ}{1-j}\\
-    V_c &= i_c X_c\\
-    &= 7.07\angle{-45^\circ} V\\
+    %V_c &= i_c X_c\\
+    %&= 7.07\angle{-45^\circ} V\\
     \implies V_c &= 7.07\sin \brak{1000t - 45^\circ}V
 \end{align}
 
@@ -77,9 +77,12 @@ Case(ii) Switch K is closed and $\overline{K}$ is open.
     \label{tab:Gate.ee.54.1}
 \end{table}
 
-From Table \ref{tab:Gate.ee.54.1} and Table \ref{tab:Gate.ee.54.2},
+%From Table \ref{tab:Gate.ee.54.1} and Table \ref{tab:Gate.ee.54.2},
+The voltage across capacitor at time t is given as,
+
 \begin{align}
-    V_c\brak{t} &= 5 + \brak{7.07\sin \brak{100t - 45^\circ}-5}e^{-\brak{t-t_1}/ \tau}
+    V_c\brak{t} &= V_c\brak{\infty}+\brak{V_c\brak{0}-V_c\brak{\infty}}e^{-t/ \tau}\\
+    \implies V_c\brak{t} &= 5 + \brak{7.07\sin \brak{100t - 45^\circ}-5}e^{-\brak{t-t_1}/ \tau}
 \end{align}
 
 For transient free voltage,
