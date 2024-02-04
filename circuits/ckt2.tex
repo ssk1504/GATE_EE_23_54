@@ -1,7 +1,6 @@
     \begin{circuitikz}[american]
-        \draw (0,7) to [R=10$\Omega$] (0,2) to [short] (3,2) to [isource, l=$1\angle 0^\circ$] (3,7) to [short] (0,7);
-        \draw (7,7) to [short] (7,6.5) to [curved capacitor=100$\mu$F, v=$V_C$] (7,2);
-        \draw (3,7) to [short, -*, i=$i_c$] (7,7);
+        \draw (0,7) to [R=10$\Omega$] (0,2) to [short] (3,2) to [isource, l=$\frac{10^3}{s^2 + 10^6}$] (3,7) to [short] (0,7);
+        \draw (7,7) to [short] (7,6.5) to [curved capacitor=$\frac{10^4}{s}$, v=$V_1\brak{s}$] (7,2);
+        \draw (3,7) to [short, i=$i_c\brak{s}$] (7,7);
         \draw (3,2) to [short] (7,2);
 \end{circuitikz}
-

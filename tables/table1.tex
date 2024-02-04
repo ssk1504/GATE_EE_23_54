@@ -1,26 +1,24 @@
 \setlength{\arrayrulewidth}{0.3mm}
-\setlength{\tabcolsep}{15pt}
-\renewcommand{\arraystretch}{1.4}
+\setlength{\tabcolsep}{20pt}
+\renewcommand{\arraystretch}{1.3}
 
-\resizebox{10cm}{!}{
-\begin{tabular}{|c|c|c|}
+
+\begin{tabular}{|c|c|}
 \hline
 
-Symbol & description & value\\
+S Domain & Time Domain\\
 \hline
-$V_C\brak{\infty}$ & Voltage across capacitor after long time & $5V$\\
+$\frac{1}{s}$ & $u\brak{t}$\\
 \hline
-$\tau$ & Time constant & 1 msec\\
+$\frac{-s}{a^2+s^2}$ & $-\cos\brak{at}$\\
 \hline
-%$V_c\brak{t}$ & Voltage across capacitor at time t & $5 + \brak{7.07\sin \brak{100t - 45^\circ}-5}e^{-\brak{t-t_1}/ \tau}$\\
-%\hline
-R & Resistance & 10$\Omega$\\
+$\frac{a}{a^2+s^2}$ & $\sin\brak{at}$\\
 \hline
-C & capacitance & 100$\mu$F\\
-\hline
-f & frequency of the current source & $\frac{500}{\pi}$\\
+$\frac{1}{s+a}$ & $e^{-at}$\\
 \hline
 
 
 \end{tabular}
-}
+
+
+

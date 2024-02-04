@@ -30,7 +30,7 @@
 % \renewcommand{\thetable}{\theenumi}
 
 \section*{Gate EE 2023}
-54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).
+54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ (GATE EE 2023)
 
 \begin{figure}[h!]
   \centering
@@ -45,23 +45,14 @@ Case(i) Switch K is open and $\overline{K}$ is closed.
   \resizebox{0.50\columnwidth}{!}{\input{circuits/ckt2}}
 \end{figure}
 
-\begin{align}
-    X_c &= -10j
-\end{align}
 Using Current divider rule,
 \begin{align}
-    i_c &= \frac{10}{10 + X_c} 1 \angle 0^\circ\\
-    &= \frac{1\angle 0^\circ}{1-j}\\
-    %V_c &= i_c X_c\\
-    %&= 7.07\angle{-45^\circ} V\\
-    \implies V_c &= 7.07\sin \brak{1000t - 45^\circ}V
+    i_c\brak{s} &= \brak{\frac{10^3}{s^2 + 10^6}}\brak{\frac{10}{10 + \frac{10^4}{s}}}\\
+    &= \frac{10^3 s}{\brak{s^2 + 10^6}\brak{s + 10^3}}\\
+    V_1\brak{s} &= \frac{10^7}{\brak{s^2 + 10^6} \brak{s + 10^3}} 
 \end{align}
 
-%\begin{table}[h!]
-%    \input{tables/table1}
-%    \caption{Case1 Parameters}
-%    \label{tab:Gate.ee.54.1}
-%\end{table}
+
 
 \newpage
 Case(ii) Switch K is closed and $\overline{K}$ is open.
@@ -71,32 +62,31 @@ Case(ii) Switch K is closed and $\overline{K}$ is open.
   \resizebox{0.55\columnwidth}{!}{\input{circuits/ckt3}}
 \end{figure}
 
+
+
+\begin{align}
+    I\brak{s} &= \frac{\frac{5}{s} - V_1\brak{s}}{10 + \frac{10^4}{s}}\\
+    V_c\brak{s} &= \frac{5}{s} - 10\brak{\frac{5-V_1\brak{s}}{1+10^{-3}s}}
+\end{align}
+
+For transient analysis,
+\begin{align}
+    \frac{5-V_1\brak{s}}{1+10^{-3}s} &= 0\\
+    \implies V_1\brak{s} &= 5\\
+    \frac{10^7}{\brak{s^2+10^6}\brak{s+10^3}} &= \frac{5}{s}\\
+    \frac{5}{s+10^3} + \frac{10^3-s}{s^2 + 10^6} &= \frac{5}{s}\\
+    \frac{-s}{s^2+10^6} + \frac{10^3}{s^2 + 10^6} + \frac{1}{s+10^3} &= \frac{1}{s}\\
+    -\cos\brak{1000t_1}+\sin\brak{1000t_1}+e^{-10^3 t_1} &= 1\\
+    \implies t_1 \approx 1.57\text{msec}
+\end{align}
+
+
+
 \begin{table}[ht]
     \input{tables/table1}
-    \caption{Parameters}
+    \vspace{0.5cm}
+    \caption{Laplace transforms}
     \label{tab:Gate.ee.54.1}
 \end{table}
-
-%From Table \ref{tab:Gate.ee.54.1} and Table \ref{tab:Gate.ee.54.2},
-The voltage across capacitor at time t is given as,
-
-\begin{align}
-    V_c\brak{t} &= V_c\brak{\infty}+\brak{V_c\brak{0}-V_c\brak{\infty}}e^{-t/ \tau}\\
-    \implies V_c\brak{t} &= 5 + \brak{7.07\sin \brak{1000t - 45^\circ}-5}e^{-t/ \tau}
-\end{align}
-
-For transient free voltage,
-\begin{align}
-    7.07\sin \brak{1000t_1 - 45^\circ} &= 5\\
-    1000t_1 - \frac{\pi}{4} &= \frac{5}{7.07}\\
-    \implies t_1 &\approx 1.57 \text{msec}
-\end{align}
-
-\begin{table}[ht]
-    \input{tables/table2}
-    \caption{Formulae}
-    \label{tab:Gate.ee.54.2}
-\end{table}
-
 
 \end{document}
