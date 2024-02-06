@@ -6,7 +6,7 @@ c 1 0 100u ic=0
 .tran 0.02ms 20ms
 .control
 run
-*set color0 = white
+set color0 = white
 plot v(1)
 .endc
 .end

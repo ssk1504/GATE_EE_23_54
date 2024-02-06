@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  6 FEB 2024 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.13)  6 FEB 2024 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1148,16 +1148,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 6.
 )
-<figs/fig1.png, id=4, 733.74126pt x 540.0175pt>
+<figs/fig1.png, id=4, 1146.2825pt x 782.925pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
 Package pdftex.def Info: figs/fig1.png  used on input line 94.
-(pdftex.def)             Requested size: 252.0pt x 185.46576pt.
-<figs/fig2.png, id=6, 711.65875pt x 560.0925pt>
+(pdftex.def)             Requested size: 252.0pt x 172.11263pt.
+<figs/fig2.png, id=6, 887.315pt x 636.3775pt>
 File: figs/fig2.png Graphic file (type png)
 <use figs/fig2.png>
 Package pdftex.def Info: figs/fig2.png  used on input line 101.
-(pdftex.def)             Requested size: 252.0pt x 198.32571pt.
+(pdftex.def)             Requested size: 252.0pt x 180.72859pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1187,7 +1187,7 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on main.pdf (2 pages, 249779 bytes).
+Output written on main.pdf (2 pages, 267273 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
