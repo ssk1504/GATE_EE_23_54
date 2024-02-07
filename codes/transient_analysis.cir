@@ -1,3 +1,4 @@
+
 *Title: case(ii) transient analysis
 
 r 1 2 10
@@ -8,6 +9,5 @@ C1 2 0 100u IC=SIN(159*time - PI/4)
 run
 set color0=white
 plot v(2)
-print v(2)
 .endc
 .end

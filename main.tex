@@ -32,15 +32,15 @@
 \section*{Gate EE 2023}
 54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ (GATE EE 2023)
 
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
   \resizebox{0.8\columnwidth}{!}{\input{figs/ckt1}}
 \end{figure}
 
 \solution
-
-Case(i) Switch K is open and $\overline{K}$ is closed.
-\begin{figure}[h!]
+\begin{enumerate}
+\item Switch K is open and $\overline{K}$ is closed.
+\begin{figure}[ht]
   \centering
   \resizebox{0.50\columnwidth}{!}{\input{figs/ckt2}}
 \end{figure}
@@ -52,12 +52,9 @@ Using Current divider rule,
     V_1\brak{s} &= \frac{10^7}{\brak{s^2 + 10^6} \brak{s + 10^3}} 
 \end{align}
 
+\item Switch K is closed and $\overline{K}$ is open.
 
-
-\newpage
-Case(ii) Switch K is closed and $\overline{K}$ is open.
-
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
   \resizebox{0.55\columnwidth}{!}{\input{figs/ckt3}}
 \end{figure}
@@ -68,6 +65,7 @@ Case(ii) Switch K is closed and $\overline{K}$ is open.
     I\brak{s} &= \frac{\frac{5}{s} - V_1\brak{s}}{10 + \frac{10^4}{s}}\\
     V_c\brak{s} &= \frac{5}{s} - 10\brak{\frac{5-V_1\brak{s}}{1+10^{-3}s}}
 \end{align}
+\end{enumerate}
 
 For transient analysis,
 \begin{align}
@@ -92,14 +90,14 @@ For transient analysis,
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\columnwidth]{figs/fig1.png}
-    \caption{plot of $V_1$ in case(i)}
+    \caption{plot of $V_1$}
     \label{fig:fig1.gate.ee.23.54}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\columnwidth]{figs/fig2.png}
-    \caption{plot of $V_c$ in case(ii)}
+    \caption{plot of $V_c$}
     \label{fig:fig2.gate.ee.23.54}
 \end{figure}
 
