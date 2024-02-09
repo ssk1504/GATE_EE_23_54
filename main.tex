@@ -30,11 +30,12 @@
 % \renewcommand{\thetable}{\theenumi}
 
 \section*{Gate EE 2023}
-54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ (GATE EE 2023)
+54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ \hfill(GATE EE 2023)
 
 \begin{figure}[ht]
   \centering
   \resizebox{0.8\columnwidth}{!}{\input{figs/ckt1}}
+  \caption{Circuit 1}
 \end{figure}
 
 \solution
@@ -43,6 +44,7 @@
 \begin{figure}[ht]
   \centering
   \resizebox{0.50\columnwidth}{!}{\input{figs/ckt2}}
+  \caption{Circuit 2}
 \end{figure}
 
 Using Current divider rule,
@@ -51,12 +53,16 @@ Using Current divider rule,
     &= \frac{10^3 s}{\brak{s^2 + 10^6}\brak{s + 10^3}}\\
     V_1\brak{s} &= \frac{10^7}{\brak{s^2 + 10^6} \brak{s + 10^3}} 
 \end{align}
+%\end{enumerate}
 
+
+%\begin{enumerate}
 \item Switch K is closed and $\overline{K}$ is open.
 
 \begin{figure}[ht]
   \centering
   \resizebox{0.55\columnwidth}{!}{\input{figs/ckt3}}
+  \caption{Circuit 3}
 \end{figure}
 
 
