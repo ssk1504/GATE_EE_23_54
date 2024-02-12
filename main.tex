@@ -30,7 +30,8 @@
 % \renewcommand{\thetable}{\theenumi}
 
 \section*{Gate EE 2023}
-54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ \hfill(GATE EE 2023)
+54. \hspace{2pt}The circuit shown in the figure is initially in the steady state with the switch K in open condition and $\overline{K}$ in closed condition. The switch K is closed and $\overline{K}$ is opened simultaneously at the instant $t = t_1$, where $t_1 > 0$. The minimum value of $t_1$ in milliseconds such that there is no transient in the voltage across the 100 $\mu F$ capacitor, is \rule{1cm}{0.15mm} (Round off to 2 decimal places).\\ 
+\hfill(GATE EE 2023)
 
 \begin{figure}[ht]
   \centering
@@ -49,14 +50,16 @@
 
 Using Current divider rule,
 \begin{align}
-    i_c\brak{s} &= \brak{\frac{10^3}{s^2 + 10^6}}\brak{\frac{10}{10 + \frac{10^4}{s}}}\\
-    &= \frac{10^3 s}{\brak{s^2 + 10^6}\brak{s + 10^3}}\\
-    V_1\brak{s} &= \frac{10^7}{\brak{s^2 + 10^6} \brak{s + 10^3}} 
+   I_1\brak{j\omega} &= \frac{10}{10+\frac{1}{j\omega C}}\\
+   V_1\brak{j\omega} &= \frac{10}{1+10j\omega C}\\
+   \abs{V_1\brak{j\omega}} &= 5\sqrt{2}
+ \end{align}
+ From Table \ref{tab:Gate.ee.54.1}
+ \begin{align}
+   V_1\brak{t} &= 5\sqrt{2}\sin\brak{\omega t - \frac{\pi}{4}} \label{eq:1.gate.ee.23.54}
 \end{align}
-%\end{enumerate}
 
 
-%\begin{enumerate}
 \item Switch K is closed and $\overline{K}$ is open.
 
 \begin{figure}[ht]
@@ -66,8 +69,10 @@ Using Current divider rule,
 \end{figure}
 
 
-
+The capacitor is charged. Thus, acts as a voltage source.\\
+From eq\brak{\ref{eq:1.gate.ee.23.54}} and Table \ref{tab:Gate.ee.54.2}
 \begin{align}
+    V_1\brak{s} &= \frac{5000 - 5s}{s^2 + 10^6} \\
     I\brak{s} &= \frac{\frac{5}{s} - V_1\brak{s}}{10 + \frac{10^4}{s}}\\
     V_c\brak{s} &= \frac{5}{s} - 10\brak{\frac{5-V_1\brak{s}}{1+10^{-3}s}}
 \end{align}
@@ -81,33 +86,40 @@ For transient analysis,
     \frac{5}{s+10^3} + \frac{10^3-s}{s^2 + 10^6} &= \frac{5}{s}\\
     \frac{-s}{s^2+10^6} + \frac{10^3}{s^2 + 10^6} + \frac{1}{s+10^3} &= \frac{1}{s}
 \end{align}
-From \tabref{tab:Gate.ee.54.1}
+From Table \ref{tab:Gate.ee.54.2}
 \begin{align}
     -\cos\brak{1000t_1}+\sin\brak{1000t_1}+e^{-10^3 t_1} &= 1\\
     \implies t_1 \approx 1.57\text{msec}
 \end{align}
 
+\begin{table}[ht]
+    \begin{adjustbox}{width=1.0\columnwidth}
+       \input{tables/table1}
+    \end{adjustbox}
+    \vspace{0.5cm}
+    \caption{Parameters}
+    \label{tab:Gate.ee.54.1}
+
+\end{table}
 
 
 \begin{table}[ht]
-    \input{tables/table1}
+    \input{tables/table2}
     \vspace{0.5cm}
     \caption{Laplace transforms}
-    \label{tab:Gate.ee.54.1}
+    \label{tab:Gate.ee.54.2}
 \end{table}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\columnwidth]{figs/fig1.png}
     \caption{plot of $V_1$ vs time}
-    \label{fig:fig1.gate.ee.23.54}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\columnwidth]{figs/fig2.png}
     \caption{plot of $V_c$ vs time}
-    \label{fig:fig2.gate.ee.23.54}
 \end{figure}
 
 \end{document}

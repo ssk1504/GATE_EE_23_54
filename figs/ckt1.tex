@@ -1,6 +1,6 @@
 \begin{circuitikz}[american]
        \draw (0,0) to [R=10$\Omega$] (0,5) to [short] (4,5);
-       \draw (0,0) to [short] (4,0) to [isource, l={$\sin\brak{1000t}$}] (4,5) to [short] (7,5) to [cspst=K] ++(0,-3);
+       \draw (0,0) to [short] (4,0) to [isource, l=\large{{$\sin\brak{1000t}$}}] (4,5) to [short] (7,5) to [cspst=K] ++(0,-3);
        \draw (7,2) to [short] (7,0) to [short] (4,0);
        \draw (7,5) to [short] (11,5) to [curved capacitor=100$\mu$F] (11,0);
        \draw (7,0) to [ospst=$\overline{K}$] ++(4,0);
