@@ -35,7 +35,9 @@
 
 \begin{figure}[ht]
   \centering
-  \resizebox{0.8\columnwidth}{!}{\input{figs/ckt1}}
+  \begin{adjustbox}{width=\columnwidth}
+      \input{figs/ckt1}
+  \end{adjustbox}
   \caption{Circuit 1}
 \end{figure}
 
@@ -44,7 +46,9 @@
 \item Switch K is open and $\overline{K}$ is closed.
 \begin{figure}[ht]
   \centering
-  \resizebox{0.50\columnwidth}{!}{\input{figs/ckt2}}
+  \begin{adjustbox}{width=\columnwidth}
+      \input{figs/ckt2}
+  \end{adjustbox}
   \caption{K is open and $\overline{K}$ is closed}
 \end{figure}
 
@@ -64,7 +68,9 @@ Using Current divider rule,
 
 \begin{figure}[ht]
   \centering
-  \resizebox{0.55\columnwidth}{!}{\input{figs/ckt3}}
+  \begin{adjustbox}{width=\columnwidth}
+      \input{figs/ckt3}
+  \end{adjustbox}
   \caption{K is closed and $\overline{K}$ is open}
 \end{figure}
 
@@ -93,7 +99,7 @@ From Table \ref{tab:Gate.ee.54.2}
 \end{align}
 
 \begin{table}[ht]
-    \begin{adjustbox}{width=1.0\columnwidth}
+    \begin{adjustbox}{width=\columnwidth}
        \input{tables/table1}
     \end{adjustbox}
     \vspace{0.5cm}
@@ -110,15 +116,15 @@ From Table \ref{tab:Gate.ee.54.2}
     \label{tab:Gate.ee.54.2}
 \end{table}
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\columnwidth]{figs/fig1.png}
+    \includegraphics[width=\columnwidth]{figs/fig1.png}
     \caption{plot of $V_1$ vs time}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\columnwidth]{figs/fig2.png}
+    \includegraphics[width=\columnwidth]{figs/fig2.png}
     \caption{plot of $V_c$ vs time}
 \end{figure}
 
