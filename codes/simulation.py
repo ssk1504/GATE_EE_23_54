@@ -23,21 +23,22 @@ time_practical = np.arange(0, total_time, delta_t)
 
 # Calculate corresponding theoretical and practical voltage values
 voltage_theoretical = theoretical_voltage_function(time_theoretical)
-voltage_practical = np.zeros_like(time_practical)
+voltage_practical = np.zeros_like(time_theoretical)
 voltage_practical[0] = initial_voltage  # Set initial condition for practical simulation
 
 # Euler method to solve the practical differential equation
-for i in range(1, len(time_practical)):
-    voltage_derivative = derivative(voltage_practical[i-1], time_practical[i-1])
-    voltage_practical[i] = voltage_practical[i-1] + voltage_derivative * delta_t
+for i in range(1, len(time_theoretical)):
+    voltage_derivative = derivative(voltage_practical[i-1], time_theoretical[i-1])
+    voltage_practical[i] = voltage_practical[i-1] + voltage_derivative * 0.0001
 
 # Plot both theoretical and practical results on the same graph
 plt.plot(time_theoretical * 1000, voltage_theoretical, label='Theoretical', color='blue')
-plt.plot(time_practical * 1000, voltage_practical, label='Practical', color='red')
+plt.plot(time_theoretical * 1000, voltage_practical, label='Practical', color='red')
 plt.xlabel('Time (milliseconds)')
 plt.ylabel('Voltage (V)')
 plt.title('Voltage vs Time')
 plt.legend()
+plt.ylim(0, 20)  # Set the y-axis range from 0 to 25V
 plt.grid(True)
 plt.show()
 
