@@ -9,5 +9,7 @@ run
 set color0=white
 plot v(2)
 print v(2)
+*write sim_data.txt v(2)
+
 .endc
 .end
